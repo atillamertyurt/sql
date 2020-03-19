@@ -1,4 +1,4 @@
---SQL self-sufficiency exam
+--SQL Self-Sufficiency Project
 
 
 --The scenario
