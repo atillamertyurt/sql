@@ -73,7 +73,9 @@ WHERE year = 2000;
 SELECT state AS below_average_states_y2000, avg_math_4_score
 FROM naep
 WHERE avg_math_4_score <
-
+(SELECT AVG(avg_math_4_score)
+ FROM naep
+ WHERE year = 2000);
 
 
 --8- Write a query that returns a field called scores_missing_y2000 that lists any states with missing values in the avg_math_4_score column of the naep data table for the year 2000.
